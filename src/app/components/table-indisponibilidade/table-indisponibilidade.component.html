@@ -1,0 +1,23 @@
+<div class="card">
+    <h2>Indisponibilização por estado</h2>
+    <p-table [value]="estadosPorNumIndisponivel" [paginator]="true" [rows]="5" [showCurrentPageReport]="true">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Estado</th>
+                <th>Total de status Indisponíveis</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-estadoPorInutil>
+            <tr>
+                <td>{{estadoPorInutil._id}}</td>
+                <td>{{estadoPorInutil.total}}</td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="paginatorleft">
+            <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+        </ng-template>
+        <ng-template pTemplate="paginatorright">
+            <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+        </ng-template>
+    </p-table>
+</div>

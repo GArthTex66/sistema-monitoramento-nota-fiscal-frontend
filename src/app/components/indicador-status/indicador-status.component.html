@@ -1,0 +1,12 @@
+<div style="display: flex; justify-content: center ;" >
+    <span *ngIf="status=='VERDE';else warning" class="p-badge p-badge-success" pTooltip="Positivo" tooltipPosition="top" ></span>
+    <ng-template #warning>
+        <span *ngIf="status=='AMARELO';else danger" class="p-badge p-badge-warning" pTooltip="Temporariamente Indisponível" tooltipPosition="top" ></span>
+    </ng-template>
+    <ng-template #danger>
+        <span *ngIf="status=='VERMELHO';else off" class="p-badge p-badge-danger" pTooltip="Indisponível" tooltipPosition="top" ></span>
+    </ng-template>
+    <ng-template #off>
+        <span class="p-badge p-badge-secondary" pTooltip="Desconhecido" tooltipPosition="top" ></span>
+    </ng-template>
+</div>

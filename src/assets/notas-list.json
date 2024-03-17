@@ -1,0 +1,120 @@
+[{
+    "_id": "1",
+    "autorizador":"SP",
+    "autorizacao": "VERDE",
+    "retornoAutorizacao": "VERDE",
+    "inutilizacao": "VERDE",
+    "consultaProtocolo": "VERDE",
+    "statusServico": "VERDE",
+    "tempoMedio":"-",
+    "consultaCadastro": "VERDE",
+    "recepcaoEvento": "VERDE",
+    "ultimaVerificacao":"2021-05-20T23:58:24.119z",
+    "created":"2021-05-20T23:58:24.119z",
+    "updated":"2021-05-20T23:58:24.119z",
+    "_class":"com.project.statusnotafiscal.models.NotaFiscal"
+},
+
+{
+"_id": "2",
+"autorizador":"SP",
+"autorizacao": "VERDE",
+"retornoAutorizacao": "VERDE",
+"inutilizacao": "VERDE",
+"consultaProtocolo": "VERDE",
+"statusServico": "VERDE",
+"tempoMedio":"-",
+"consultaCadastro": "VERDE",
+"recepcaoEvento": "VERDE",
+"ultimaVerificacao":"2022-05-20T23:58:24.119z",
+"created":"2022-05-20T23:58:24.119z",
+"updated":"2022-05-20T23:58:24.119z",
+"_class":"com.project.statusnotafiscal.models.NotaFiscal"
+},
+
+{
+"_id": "3",
+"autorizador":"GO",
+"autorizacao": "AMARELO",
+"retornoAutorizacao": "AMARELO",
+"inutilizacao": "AMARELO",
+"consultaProtocolo": "AMARELO",
+"statusServico": "AMARELO",
+"tempoMedio":"-",
+"consultaCadastro": "AMARELO",
+"recepcaoEvento": "AMARELO",
+"ultimaVerificacao":"2022-05-20T23:58:24.119z",
+"created":"2021-05-20T23:58:24.119z",
+"updated":"2021-05-20T23:58:24.119z",
+"_class":"com.project.statusnotafiscal.models.NotaFiscal"
+},
+
+{
+"_id": "4",
+"autorizador":"MG",
+"autorizacao": "VERMELHO",
+"retornoAutorizacao": "VERMELHO",
+"inutilizacao": "VERMELHO",
+"consultaProtocolo": "VERMELHO",
+"statusServico": "VERMELHO",
+"tempoMedio":"-",
+"consultaCadastro": "VERMELHO",
+"recepcaoEvento": "VERMELHO",
+"ultimaVerificacao":"2023-05-20T23:58:24.119z",
+"created":"2023-05-20T23:58:24.119z",
+"updated":"2023-05-20T23:58:24.119z",
+"_class":"com.project.statusnotafiscal.models.NotaFiscal"
+},
+
+{
+"_id": "5",
+"autorizador":"RJ",
+"autorizacao": "VERMELHO",
+"retornoAutorizacao": "VERMELHO",
+"inutilizacao": "VERMELHO",
+"consultaProtocolo": "VERMELHO",
+"statusServico": "VERMELHO",
+"tempoMedio":"-",
+"consultaCadastro": "VERMELHO",
+"recepcaoEvento": "VERMELHO",
+"ultimaVerificacao":"2023-05-20T23:58:24.119z",
+"created":"2023-05-20T23:58:24.119z",
+"updated":"2023-05-20T23:58:24.119z",
+"_class":"com.project.statusnotafiscal.models.NotaFiscal"
+},
+{
+    "_id": "6",
+    "autorizador":"RJ",
+    "autorizacao": "VERMELHO",
+    "retornoAutorizacao": "VERMELHO",
+    "inutilizacao": "VERMELHO",
+    "consultaProtocolo": "VERMELHO",
+    "statusServico": "VERMELHO",
+    "tempoMedio":"-",
+    "consultaCadastro": "VERMELHO",
+    "recepcaoEvento": "VERMELHO",
+    "ultimaVerificacao":"2023-05-20T23:58:24.119z",
+    "created":"2023-05-20T23:58:24.119z",
+    "updated":"2023-05-20T23:58:24.119z",
+    "_class":"com.project.statusnotafiscal.models.NotaFiscal"
+    },
+    {
+        "_id": "7",
+        "autorizador":"RJ",
+        "autorizacao": "VERMELHO",
+        "retornoAutorizacao": "VERMELHO",
+        "inutilizacao": "VERMELHO",
+        "consultaProtocolo": "VERMELHO",
+        "statusServico": "VERMELHO",
+        "tempoMedio":"-",
+        "consultaCadastro": "VERMELHO",
+        "recepcaoEvento": "VERMELHO",
+        "ultimaVerificacao":"2023-05-20T23:58:24.119z",
+        "created":"2023-05-20T23:58:24.119z",
+        "updated":"2023-05-20T23:58:24.119z",
+        "_class":"com.project.statusnotafiscal.models.NotaFiscal"
+        }
+
+]
+
+

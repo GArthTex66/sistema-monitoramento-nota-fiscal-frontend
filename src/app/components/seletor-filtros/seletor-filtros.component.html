@@ -1,0 +1,27 @@
+<div style="display: flex; justify-content: center">
+    <p-card header="Selecione o filtro" [style]="{'width': '50rem', 'margin-bottom': '2em'}">
+       
+        <div class="list-group-item">
+            <button pButton pRipple type="button" (click)="showDialogFiltroEstado()" label="Por Estado" class="p-button-raised p-button-primary"></button>
+            <button pButton pRipple type="button" (click)="showDialogFiltroData()" label="Por Data" class="p-button-raised p-button-danger"></button>
+        </div>
+    </p-card>
+</div>
+<p-dialog header="Selecione um estado" [(visible)]="displayFiltroEstado" [modal]="true" [draggable]="false">
+    <div [style]="{ display: 'flex', 'justify-content': 'center', width: '35vw', height:'20vw'}" >
+        <p-dropdown (onChange)="closeDialogFiltroEstado()" [style]="{width:'14rem'}" [options]="estados" [(ngModel)]="estadoSelecionado" placeholder="Selecione um estado" optionLabel="name" [showClear]="true"></p-dropdown>
+        <p style="padding-left: 20px  ;"> <strong> SIGLAS UTILIZADAS:</strong><br>
+            *SVAN - Sefaz Virtual Ambiente Nacional *SVRS - Sefaz Virtual Rio Grande do Sul *SVC - Sefaz Virtual de Contingência<br>
+            UF que utilizam a SVAN - Sefaz Virtual do Ambiente Nacional: MA<br>
+            UF que utilizam a SVRS - Sefaz Virtual do RS:<br>
+            - Para serviço de Consulta Cadastro: AC, ES, RN, PB, SC<br>
+            - Para demais serviços relacionados com o sistema da NF-e: AC, AL, AP, CE, DF, ES, PA, PB, PI, RJ, RN, RO, RR, SC, SE, TO<br>
+            Autorizadores em contingência:<br>
+            - UF que utilizam a SVC-AN - Sefaz Virtual de Contingência Ambiente Nacional: AC, AL, AP, CE, DF, ES, MG, PA, PB, PI, RJ, RN, RO, RR, RS, SC, SE, SP, TO<br>
+            - UF que utilizam a SVC-RS - Sefaz Virtual de Contingência Rio Grande do Sul: AM, BA, GO, MA, MS, MT, PE, PR</p>
+    </div>
+</p-dialog>
+
+<p-dialog header="Selecione uma data" [(visible)]="displayFiltroData" [modal]="true" [draggable]="false">
+    <p-calendar (onSelect)="closeDialogFiltroData()" [(ngModel)]="dateValue" placeholder="Data" [inline]="true"></p-calendar>
+</p-dialog>

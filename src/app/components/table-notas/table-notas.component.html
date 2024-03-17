@@ -1,0 +1,33 @@
+<div class="slider-class">
+    <h2>Notas Fiscais</h2>
+    <p-table [value]="notas" [paginator]="true" [rows]="5">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Estado</th>
+                <th>Autorização</th>
+                <th>Retorno Autorização</th>
+                <th>Inutilização</th>
+                <th>Consulta Protocolo</th>
+                <th>Status Serviço</th>
+                <th>Recepção Evento</th>
+                <th>Consulta Cadastro</th>
+                <th>Tempo Médio</th>
+                <th>Ultima Verificação</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-nota>
+            <tr>
+                <td>{{nota.autorizador}}</td>
+                <td><app-indicador-status [status]="nota.autorizacao"></app-indicador-status></td>
+                <td><app-indicador-status [status]="nota.retornoAutorizacao"></app-indicador-status></td>
+                <td><app-indicador-status [status]="nota.inutilizacao"></app-indicador-status></td>
+                <td><app-indicador-status [status]="nota.consultaProtocolo"></app-indicador-status></td>
+                <td><app-indicador-status [status]="nota.statusServico"></app-indicador-status></td>
+                <td><app-indicador-status [status]="nota.recepcaoEvento"></app-indicador-status></td>
+                <td><app-indicador-status [status]="nota.consultaCadastro"></app-indicador-status></td>
+                <td>{{nota.tempoMedio}}</td>
+                <td>{{nota.ultimaVerificacao}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
