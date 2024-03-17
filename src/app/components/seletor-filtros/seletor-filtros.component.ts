@@ -30,7 +30,7 @@ export class SeletorFiltrosComponent implements OnInit {
       this.displayFiltroEstado = false;
       this.displayFiltroData = false;
       console.log(this.estadoSelecionado.name)
-      this.router.navigate(['/notas-fiscais'], { queryParams: { data: this.estadoSelecionado.name, filter:"estado" } });
+      this.router.navigate(['/notas-fiscais'], { queryParams: { value: this.estadoSelecionado.name, filter:"estado" } });
     }, 1000)
   }
 
@@ -39,7 +39,7 @@ export class SeletorFiltrosComponent implements OnInit {
       this.displayFiltroEstado = false;
       this.displayFiltroData = false;
       console.log(this.dateValue)
-      this.router.navigate(['/notas-fiscais'], { queryParams: { data: this.dateValue, filter:"data" } });
+      this.router.navigate(['/notas-fiscais'], { queryParams: { value: this.dateValue, filter:"data" } });
     }, 1000)
   }
 
